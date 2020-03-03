@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Mozambique Villages Example Data</title>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+        <script src='vendor/mapbox-gl.js'></script>
+        <link href='vendor/mapbox-gl.css' rel='stylesheet' />
+        <style>
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <div id='map'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY2FyZGVybmUiLCJhIjoiY2p4ZWd2MmZ1MGtvazNwbnpmbGJqbHhjeiJ9.dlwfb8JCUTb3Y2-8Lgcsng';
+let map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/carderne/ck7c07hkr01331iluy12ow1dk',
+    center: [35, -24],
+    zoom: 7,
+    maxZoom: 122,
+    minZoom: 0
+});
+        </script>
+    </body>
+</html>
